@@ -3,5 +3,30 @@
 @use 'normalize.css';
 
 body {
-  font-size: clamp(16px, 1.5vw, 20px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  font-family: variables.$font-family;
+  background-color: variables.$my-yellow;
+}
+
+main {
+  @include mixins.flex-center;
+  flex-grow: 1;
+}
+
+#container {
+  background-color: variables.$my-white;
+  border: 1px solid variables.$my-black;
+  border-radius: 20px;
+  box-shadow: 8px 8px 2px variables.$my-black;
+  padding: 1.3rem;
+  width: 80vw;
+  height: 60vh;
+
+  #responsive-svg {
+    overflow: hidden;
+    border-radius: 10px;
+  }
 }
