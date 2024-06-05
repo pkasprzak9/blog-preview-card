@@ -3,7 +3,6 @@
 @use 'normalize.css';
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-direction: column;
@@ -14,7 +13,7 @@ body {
 
 main {
   @include mixins.flex-center;
-  flex-grow: 1;
+  height: 100vh;
 }
 
 #container {
@@ -27,7 +26,8 @@ main {
   box-shadow: 8px 8px 2px variables.$my-black;
   padding: 1.3rem;
   width: clamp(280px, 70vw, 336px);
-  height: 60vh;
+  height: 50vh;
+  transition: .5s;
 
   #responsive-svg { //size: width="336" height="201"
     @include mixins.flex-center;
@@ -46,7 +46,7 @@ main {
       background-color: variables.$my-yellow;
       color: variables.$my-black;
       font-weight: variables.$font-weight-bold;
-      font-size: clamp(0.7rem, 1vw, 1rem);
+      font-size: clamp(0.8rem, 1vw, 1rem);
       padding: 0.4rem 0.6rem;
       border-radius: 5px;
       width: fit-content;
@@ -54,7 +54,7 @@ main {
 
     .publish-date {
       color: variables.$my-black;
-      font-size: clamp(0.7rem, 1vw, 1rem);
+      font-size: clamp(0.8rem, 1vw, 1rem);
     }
   }
 
@@ -64,6 +64,7 @@ main {
     font-weight: variables.$font-weight-bold;
     padding: 0;
     margin: 0;
+    transition: .5s;
   }
   p {
     color: variables.$my-grey;
@@ -81,5 +82,23 @@ main {
       width: 35px;
       height: 35px;
     }
+  }
+
+  &:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 16px 16px 2px variables.$my-black;
+
+    h1 {
+      color: variables.$my-yellow;
+    }
+  }
+}
+
+.attribution {
+  @include mixins.flex-center;
+  color: variables.$my-black;
+  a {
+    color: variables.$my-black;
+    font-weight: variables.$font-weight-bold;
   }
 }
