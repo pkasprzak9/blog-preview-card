@@ -335,7 +335,7 @@ main {
   box-shadow: 8px 8px 2px hsl(0, 0%, 7%);
   padding: 1.3rem;
   width: clamp(280px, 70vw, 336px);
-  height: 50vh;
+  height: 55vh;
   transition: 0.5s;
 }
 #container #responsive-svg {

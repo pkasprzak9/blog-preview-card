@@ -26,7 +26,7 @@ main {
   box-shadow: 8px 8px 2px variables.$my-black;
   padding: 1.3rem;
   width: clamp(280px, 70vw, 336px);
-  height: 50vh;
+  height: 55vh;
   transition: .5s;
 
   #responsive-svg { //size: width="336" height="201"
