@@ -1,3 +1,4 @@
+/* Fonts */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -309,5 +310,31 @@ template {
 }
 
 body {
-  font-size: clamp(16px, 1.5vw, 20px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  font-family: "Figtree", sans-serif;
+  background-color: hsl(47, 88%, 63%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#container {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+  box-shadow: 8px 8px 2px hsl(0, 0%, 7%);
+  padding: 1.3rem;
+  width: 80vw;
+  height: 60vh;
+}
+#container #responsive-svg {
+  overflow: hidden;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
