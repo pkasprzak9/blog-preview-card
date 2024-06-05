@@ -1,0 +1,7 @@
+@use 'variables';
+@use 'mixins';
+@use 'normalize.css';
+
+body {
+  font-size: clamp(16px, 1.5vw, 20px);
+}
