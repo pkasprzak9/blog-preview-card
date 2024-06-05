@@ -4,6 +4,9 @@
 
 Please note that GitHub Pages has caused display issues, resulting in poor proportions. The card might not appear as intended.
 
+<img width="1539" alt="image" src="https://github.com/pkasprzak9/blog-preview-card/assets/81309180/ea8f214b-c6dd-411f-a678-0019cdebf556">
+
+
 ## Project Description
 
 This project showcases a responsive blog preview card, created as part of a Frontend Mentor challenge. The main goal was to learn how to create a responsive design without using traditional @media queries, instead leveraging the CSS `clamp()` function. Additionally, the project served as a practice ground for using SCSS and SASS, focusing on file structure organization and preprocessor functions.
