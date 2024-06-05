@@ -315,6 +315,7 @@ body {
   flex-direction: column;
   flex-direction: column;
   font-family: "Figtree", sans-serif;
+  font-weight: 500;
   background-color: hsl(47, 88%, 63%);
 }
 
@@ -328,23 +329,63 @@ main {
 #container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   background-color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 7%);
   border-radius: 20px;
   box-shadow: 8px 8px 2px hsl(0, 0%, 7%);
   padding: 1.3rem;
   width: clamp(280px, 70vw, 336px);
-  height: 55vh;
-}
-#container header {
-  width: 100%;
+  height: 60vh;
 }
 #container #responsive-svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   overflow: hidden;
   border-radius: 10px;
   height: 201px;
+}
+#container #card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#container #card-header .badge {
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#container #card-header .publish-date {
+  color: hsl(0, 0%, 7%);
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+#container h1 {
+  color: hsl(0, 0%, 7%);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+#container p {
+  color: hsl(0, 0%, 50%);
+  font-size: 16px;
+  margin: 0;
+}
+#container #card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+}
+#container #card-footer img {
+  width: 35px;
+  height: 35px;
 }/*# sourceMappingURL=style.css.map */
