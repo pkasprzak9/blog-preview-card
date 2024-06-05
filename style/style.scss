@@ -26,7 +26,7 @@ main {
   box-shadow: 8px 8px 2px variables.$my-black;
   padding: 1.3rem;
   width: clamp(280px, 70vw, 336px);
-  height: 60vh;
+  height: 50vh;
   transition: .5s;
 
   #responsive-svg { //size: width="336" height="201"
@@ -40,7 +40,7 @@ main {
   #card-header {
     display: flex;
     flex-direction: column;
-    // gap: 0.7rem;
+    gap: 0.7rem;
 
     .badge {
       background-color: variables.$my-yellow;
