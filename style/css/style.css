@@ -326,15 +326,25 @@ main {
 }
 
 #container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 7%);
   border-radius: 20px;
   box-shadow: 8px 8px 2px hsl(0, 0%, 7%);
   padding: 1.3rem;
-  width: 80vw;
-  height: 60vh;
+  width: clamp(280px, 70vw, 336px);
+  height: 55vh;
+}
+#container header {
+  width: 100%;
 }
 #container #responsive-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   border-radius: 10px;
+  height: 201px;
 }/*# sourceMappingURL=style.css.map */

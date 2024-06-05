@@ -17,16 +17,30 @@ main {
 }
 
 #container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background-color: variables.$my-white;
   border: 1px solid variables.$my-black;
   border-radius: 20px;
   box-shadow: 8px 8px 2px variables.$my-black;
   padding: 1.3rem;
-  width: 80vw;
-  height: 60vh;
+  width: clamp(280px, 70vw, 336px);
+  height: 55vh;
 
-  #responsive-svg {
+  header {
+    width: 100%;
+  }
+
+  #responsive-svg { //size: width="336" height="201"
+    @include mixins.flex-center;
     overflow: hidden;
     border-radius: 10px;
+    height: 201px;
   }
+
+  // @media (min-width: 768px) {
+  //   width: 336px;
+  // }
 }
